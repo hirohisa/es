@@ -1,3 +1,4 @@
 task :default do
-  sh 'ruby script.rb'
+  sh 'bundle install --path vendor/bundle'
+  sh 'bundle exec ruby script.rb'
 end
